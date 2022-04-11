@@ -1,0 +1,293 @@
+body{
+    /* background-image: url("https://ak9.picdn.net/shutterstock/videos/31081549/thumb/6.jpg");*/
+    background-color: #acb9de;
+    background-image: url("meals1.jpg");
+    background-size: 100%;
+
+}
+ul {
+    margin: 0;
+}
+.master{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.head_div{
+    opacity: 0.9;
+    /* background-color: darkgrey;*/
+    height: 90px;
+    width: 100%;
+    background-image: url("bg.jpg");
+    box-shadow: 0px 2px 3px #37a4ff;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+
+}
+
+
+.cont {
+    position: relative;
+    /* top: 100px;*/
+    /*   padding-bottom: 80px;*/
+
+}
+
+/*.cont div{
+    display: inline;
+}*/
+
+.footer{
+    opacity: 0.9;
+    width: 100%;
+    margin-top: 1200px;
+    position: absolute;
+    background-image: url("bg.jpg");
+
+
+    height: 15%;
+    float: left;
+    box-shadow: 0px -2px 3px #37a4ff;
+}
+.footer_cont{
+    width: 100%;
+    height: 180px;
+    /*background-image: url("unnamed.jpg");*/
+
+}
+
+
+.logo{
+    float: left;
+}
+
+.menu li {
+
+    display: inline;
+    background-color: #37a4ff;
+
+    padding: 15px;
+    border-radius: 30px;
+
+}
+
+.menu li:hover{
+    background-color: lightcoral;
+}
+.menu a:link{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.menu a:hover{
+    color: red;
+}
+
+.menu_cont{
+
+    padding-top: 20px;
+}
+
+
+.footer_box{
+    width: 1000px;
+    height: 150px;
+
+    color: #37a4ff;
+
+}
+.imtxt{
+    display: inline;
+}
+
+.tit1{
+
+    background-image: url("bg.jpg");
+    color: #37a4ff;
+    margin-left: 25px;
+    margin-top: 120px;
+    height: 70px;
+    width: 350px;
+    font-size: 40pt;
+    font-style: inherit;
+    font-family: "Berlin Sans FB Demi";
+}
+
+
+.pic1{
+    margin-top: 20px;
+
+    padding-top: 0px ;
+    /*overflow: scroll ;*/
+    /*border: lightcoral 3px double;*/
+    float:left;
+    margin-left:45px;
+    /* margin-top:70px;*/
+    width: 350px;
+    height: 390px;
+}
+.txt1{
+    background-image: url("bg.jpg");
+
+    color: #37a4ff;
+    margin-left: 45px;
+    margin-top: 400px;
+    height: 70px;
+    width: 350px;
+    font-size: 20pt;
+    font-style: inherit;
+    font-family: "Berlin Sans FB Demi";
+}
+.pic2{
+    margin-top: -390px;
+
+    padding-top: 0px ;
+    /*overflow: scroll ;*/
+    /*border: lightcoral 3px double;*/
+    float:left;
+    margin-left:495px;
+    /* margin-top:70px;*/
+    width: 350px;
+    height: 390px;
+}
+.txt2{
+    background-image: url("bg.jpg");
+    margin-top:-58px;
+    color: #37a4ff;
+    margin-left: 495px;
+
+    height: 65px;
+    width: 350px;
+    font-size: 20pt;
+    font-style: inherit;
+    font-family: "Berlin Sans FB Demi";
+}
+.pic3{
+    margin-top: -450px;
+
+    padding-top: 0px ;
+    /*overflow: scroll ;*/
+    /*border: lightcoral 3px double;*/
+    float:left;
+    margin-left:950px;
+    /* margin-top:70px;*/
+    width: 350px;
+    height: 390px;
+}
+.txt3{
+    background-image: url("bg.jpg");
+
+    color: #37a4ff;
+    margin-left: 950px;
+    margin-top:-60px;
+    height: 65px;
+    width: 350px;
+    font-size: 20pt;
+    font-style: inherit;
+    font-family: "Berlin Sans FB Demi";
+}
+
+.tit2{
+
+    background-image: url("bg.jpg");
+    color: #37a4ff;
+    margin-left: 25px;
+    margin-top: 120px;
+    height: 70px;
+    width: 350px;
+    font-size: 40pt;
+    font-style: inherit;
+    font-family: "Berlin Sans FB Demi";
+}
+
+
+.pic4{
+    margin-top: -400px;
+
+    padding-top: 0px ;
+    /*overflow: scroll ;*/
+    /*border: lightcoral 3px double;*/
+    float:left;
+    margin-left:25px;
+    /* margin-top:70px;*/
+    width: 350px;
+    height: 390px;
+}
+.txt4{
+    background-image: url("bg.jpg");
+    color: #37a4ff;
+    margin-left: 25px;
+    margin-top: 420px;
+    height: 70px;
+    width: 350px;
+    font-size: 25pt;
+    font-style: inherit;
+    font-family: "Berlin Sans FB Demi";
+}
+.pic5{
+    margin-top: -470px;
+
+    padding-top: 0px ;
+    /*overflow: scroll ;*/
+    /*border: lightcoral 3px double;*/
+    float:left;
+    margin-left:475px;
+    /* margin-top:70px;*/
+    width: 350px;
+    height: 390px;
+}
+.txt5{
+    background-image: url("bg.jpg");
+    color: #37a4ff;
+    margin-left: 475px;
+    margin-top: -70px;
+    height: 70px;
+    width: 350px;
+    font-size: 25pt;
+    font-style: inherit;
+    font-family: "Berlin Sans FB Demi";
+}
+
+.pic6{
+    margin-top: -460px;
+
+    padding-top: 0px ;
+    /*overflow: scroll ;*/
+    /*border: lightcoral 3px double;*/
+    float:left;
+    margin-left:950px;
+    /* margin-top:70px;*/
+    width: 350px;
+    height: 390px;
+}
+.txt6{
+    background-image: url("bg.jpg");
+
+    color: #37a4ff;
+    margin-left: 950px;
+    margin-top:-60px;
+    height: 65px;
+    width: 350px;
+    font-size: 20pt;
+    font-style: inherit;
+    font-family: "Berlin Sans FB Demi";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

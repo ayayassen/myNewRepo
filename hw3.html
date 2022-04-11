@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW3</title>
+
+    <style type="text/css">
+
+        #div_b{
+
+            display: none;
+        }
+        .bu{
+            font-size: 25px;
+            font-family: Andalus;
+            width: 130px;
+            height: 40px;
+            font-style: oblique;
+        }
+
+    </style>
+    <script type="text/javascript" >
+
+        function clk() {
+            var type = document.getElementsByName("rad");
+
+            for(var i =0 ; i<type.length; i++){
+                if(type[i].checked){
+                    var color =type[i].value;
+                    document.getElementById("div_b").style.display = "none";
+                    document.body.style.backgroundColor=color;
+                }
+            }
+            creatcookie('FavColor',color,2);
+        }
+
+        function creatcookie(name,value,days) {
+
+
+
+            if(days) {
+                var date = new Date();
+                date.setTime(date.getTime()+ (days*24*60*60*1000));
+                var expires = "; expires="+ date.toUTCString();
+            }
+            else
+                var expires =";";
+            document.cookie = name+"="+value + ";"+expires;
+
+
+        }
+        function readCookie(name) {
+
+            var nameEQ = name + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for(var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(nameEQ.length, c.length);
+                }
+            }
+            return null;
+
+/*
+            var nameEQ= name+"=";
+            var ca = document.cookie.split(';');
+            for (var i=0;i<ca.length;i++){
+                var c = ca[i];
+                if(c.indexOf(nameEQ)==0)
+                { return unescape (c.substring(nameEQ.length,c.length));}
+            }
+           return null;*/
+        }
+        function Deletecookie(name) {
+            creatcookie(name,"",-1);
+
+        }
+        function cheackcolor() {
+            let colour = readCookie("FavColor");
+            if (colour == null){
+
+                document.getElementById("div_b").style.display = "block";
+
+            }
+            else
+
+            document.body.style.backgroundColor=colour;
+            document.getElementById("div_b").style.display = "block";
+
+        }
+
+
+    </script>
+</head>
+<body onload="cheackcolor()">
+
+<div id="div_b" >
+   <b> what is your fav color :</b><br/>
+<input type="radio" name="rad" value="red"/><b> Red</b> <br/>
+<input type="radio" name="rad" value="green" /><b> Green</b><br/>
+    <input type="radio" name="rad" value="blue"/><b> Blue</b><br/>
+    <input type="radio" name="rad" value="pink"/><b> Pink</b><br/>
+    <input type="radio" name="rad" value="black"/><b> Black</b><br/>
+
+
+<button class="bu"  onclick="clk()">save</button>
+
+</div>
+</body>
+</html>
